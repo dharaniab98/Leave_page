@@ -1,0 +1,181 @@
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="vidyanikethanLogo.png">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>Attendance Management | Sree Vidyankethan Engineering College</title>
+    </head>
+    <body>
+        <div class="top">
+          <p class="round"><strong>Leave Application</strong></p>
+          <table style="width:100%">
+            <tr style="background-color:#ffffff">
+              <td><strong>
+                Employee Code
+              </td>
+              <td>
+                SVECIT44
+              </td>
+              <td><strong>
+                Employee Name
+              </td>
+              <td>
+                MR.GANGAVARAPU UMA MAHESH
+              </td>
+            </tr>
+            <tr>
+              <td><strong>
+                Department
+              </td>
+              <td>
+                INFORMATION TECHNOLOGY
+              </td>
+              <td><strong>
+                Designation
+              </td>
+              <td>
+                Assistant Professor
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="middle">
+          <p class="round"><strong>Leave Balance</strong></p>
+          <table class="Leave"border="1px" style="width:100%">
+            <tr>
+              <th>Leave Name</th>
+              <th>Total Leaves Alloted</th>
+              <th>Leaves Availed</th>
+              <th>Pending Leaves</th>
+              <th>Leave Balance</th>
+            </tr>
+            <tr>
+              <td><strong>Casual Leave</td>
+              <td>15</td>
+              <td class="casualLeaveAvailed">2</td>
+              <td>0</td>
+              <td class="casualLeavePending">13</td>
+            </tr>
+            <tr>
+              <td><strong>Leave On Loss Of Pay</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>NA</td>
+            </tr>
+            <tr>
+              <td><strong>Compensatoty CL</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td><strong>On Duty</td>
+              <td>0</td>
+              <td>5</td>
+              <td>0</td>
+              <td>NA</td>
+            </tr>
+            <tr>
+              <td><strong>Medical Leave</td>
+              <td>60</td>
+              <td class="medicalLeaveAvailed">0</td>
+              <td>0</td>
+              <td class="medicalLeavePending">60</td>
+              <tr>
+                <td><strong>Earned Leave</td>
+                <td>18</td>
+                <td class="earnedLeaveAvailed">7</td>
+                <td>0</td>
+                <td class="earnedLeavePending">11</td>
+              </tr>
+              <tr>
+                <td><strong>Academic Leave</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td><strong>Summer Vacation</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+            </tr>
+          </table>
+        </div>
+          <div class="bottom">
+            <form>
+              <table style="width:100%">
+                <tr style="background-color:#ffffff">
+                  <td><strong>
+                    Leave
+                  </td>
+                  <td>
+                    <select class="leaveType" required>
+                    <option value="casualLeave">Casual Leave</option>
+                    <option value="Leave On Loss Of Pay">Leave On Loss Of Pay</option>
+                    <option value="Compensatoty CL">Compensatoty CL</option>
+                    <option value="On Duty">On Duty</option>
+                    <option value="medicalLeave">Medical Leave</option>
+                    <option value="earnedLeave">Earned Leave</option>
+                    <option value="Academic Leave">Academic Leave</option>
+                    <option value="Summer Vacation">Summer Vacation</option>
+                  </select>
+                  </td>
+                  <td><strong>
+                    Leave Balance
+                  </td>
+                  <td>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>
+                    From Date
+                  </td>
+                  <td>
+                    <input type="date" name="fromDate" class="fromDate">
+                  </td>
+                  <td><strong>
+                    To date
+                  </td>
+                  <td>
+                    <input type="date" name="toDate" class="toDate">
+                  </td>
+                </tr>
+              </table>
+              <table style="width:100%">
+                <tr style="background-color:#ffffff">
+                  <td><strong>Effective Days</td>
+                  <td><input type="text" name="effectiveDays" class="effectiveDays" value="Select dates" disabled>
+                  <td><input type="button" class="checkEffectiveDays" value="Check Effective Dates"></td>
+                  <td></td>
+                </tr>
+              </table>
+              <table>
+                <tr style="background-color:#ffffff">
+                  <td>
+                    <strong>Purpose</strong>
+                  </td>
+                  <td>
+                    <textarea name="Purpose" rows="1" cols="100"></textarea>
+                  </td>
+                </tr>
+              </table>
+              <center>
+              <input type="button" name="" value="Show Alternative">
+              <input type="reset" name="" value="reset">
+              <div class="submit">
+                <input type="button" class="requestLeave" value="Request leave &rarr;">
+              </div>
+            </form>
+        </div>
+
+
+        <script type="text/javascript" src="app.js"></script>
+      </body>
+</html>
